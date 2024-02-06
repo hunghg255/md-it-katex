@@ -44,7 +44,7 @@ function isValidDelim(state, pos) {
 }
 
 function math_inline(state, silent) {
-  let start, match, token, res, pos, esc_count;
+  let start, match, token, res, pos;
 
   if (state.src[state.pos] !== '$') {
     return false;
@@ -74,7 +74,7 @@ function math_inline(state, silent) {
     }
 
     // Even number of escapes, potential closing delimiter found
-    if ((match - pos) % 2 == 1) {
+    if ((match - pos) % 2 === 1) {
       break;
     }
     match += 1;

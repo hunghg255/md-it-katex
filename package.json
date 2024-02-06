@@ -1,6 +1,6 @@
 {
   "name": "md-it-katex",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
