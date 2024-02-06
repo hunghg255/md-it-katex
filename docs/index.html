@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css" />
+  <style>
+    #input {
+      display: block;
+      font-size: 12pt;
+      padding-top: 0.5em;
+      padding-left: 0.1em;
+      font-family: monospace;
+    }
+
+    #button {
+      margin-top: 1em;
+      width: 120px;
+      height: 50px;
+      font-size: 14pt;
+    }
+
+    #output {
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <textarea id="input" type="textarea" rows=20, cols=80 spellcheck="false">
+# Maxwell's Equations
+
+
+equation | description
+----------|------------
+$\nabla \cdot \vec{\mathbf{B}}  = 0$ | divergence of $\vec{\mathbf{B}}$ is zero
+$\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t}  = \vec{\mathbf{0}}$ |  curl of $\vec{\mathbf{E}}$ is proportional to the rate of change of $\vec{\mathbf{B}}$
+$\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} = \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} = 4 \pi \rho$ | _wha?_
+
+$$
+x^3 + y^3 = z^3
+$$
+
+$$
+\frac{\bcancel{\frac13}}{\bcancel{\frac13}} = 1
+$$
+
+$$
+\begin{aligned}
+
+(a+b)^2 &= (a+b)(a+b)           \\
+        &= a^2 + ab + ba + b^2  \\
+        &= a^2 + 2ab + b^2
+\end{aligned}
+$$
+
+$$
+\cfrac{2}{1+\cfrac{2}{1+\cfrac{2}{1}}}
+$$
+
+$$
+P\implies Q
+$$
+
+$$
+a + \lt b\gt + c
+$$
+
+$$
+\sum\nolimits_{k=1}^n a_k
+$$
+
+$$
+\frac ab + {\scriptscriptstyle \frac cd + \frac ef} + \frac gh
+$$
+
+$$
+\sum_{ \substack{ 1\lt i\lt 3 \\ 1\le j\lt 5 }} a_{ij}
+$$
+
+$$
+\underbrace{x + \cdots + x}_{n\rm\ times}
+$$
+
+$$
+\left(\vcenter{\frac{a+b}{\dfrac{c}{d}}}\right)
+$$
+
+$$
+x+\xcancel{5y}=0
+$$
+
+$$
+\def\arraystretch{1.5}
+  \begin{array}{c:c:c}
+  a & b & c \\ \hline
+  d & e & f \\
+  \hdashline
+  g & h & i
+\end{array}
+$$
+</textarea>
+  <button id="button">Mathdown!</button>
+  <div id="output" class="markdown-body"></div>
+  <script src="./bundle.js"></script>
+</body>
